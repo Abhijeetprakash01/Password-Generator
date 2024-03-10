@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        
+        <div class="container">
+
+            <h1>Password Generator</h1>
+                
+                <div class="display-content">
+                    <input readonly placeholder="Password" class="display">
+                    
+                    <button class="copy-button"><i class="fa-regular fa-copy"></i></button>
+                </div>
+                
+              <div class="input-container">
+
+                <div class="length-container">
+                  <p>Password Length</p>
+                  <p data-lengthNumber>0</p>
+                </div>
+                 
+                <!-- slider -->
+                <input type="range" min="1" max="20" class="slider" step="1">
+
+               <div class="container-checkbox">
+                <div class="check">
+                    <input type="checkbox" id="uppercase">
+                    <label for="Upper-Case">Include UpperCase</label>
+                </div>
+                
+                <div class="check">
+                    <input type="checkbox" id="lowercase">
+                    <label for="Upper-Case">Include UpperCase</label>
+                </div> 
+                
+                <div class="check">
+                    <input type="checkbox" id="Number">
+                    <label for="number">Include Number</label>
+                </div>
+
+               <div class="check">
+                <input type="checkbox" id="symbol">
+                <label for="Upper-Case">Include symbol</label>
+            </div>
+        </div>
+        <div class="strength-container">
+            <p>Strength</p>
+            <div class="indicator"></div>
+        </div>
+        <button class="generate-btn">
+            <label for="">Generate Password</label>
+        </button>
+    </div>
+    </div>
+
+    </div>
+    <script src="https://kit.fontawesome.com/9abb1d3421.js" crossorigin="anonymous"></script>
+</body>
+</html>
